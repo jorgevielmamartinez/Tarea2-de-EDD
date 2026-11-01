@@ -25,7 +25,7 @@ public class Main {
 
   private static void ejecutarConfiguracion(int n, int k, long semilla, int rango) {
     String nombreArchivo = "datos_n" + n + "_k" + k + ".txt";
-    GeneradorArchivos.generar(nombreArchivo, n, k, semilla, rango);
+    Archivos.generar(nombreArchivo, n, k, semilla, rango);
     int[][] arreglos = leerArchivo(nombreArchivo);
 
     System.out.printf("Configuración n = %d, k = %d%n", n, k);
